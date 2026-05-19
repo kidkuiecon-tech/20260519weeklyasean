@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASEAN Weekly Economic Update - 19 May 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #f8fafc;
+        }
+        .country-card {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            overflow: hidden;
+            margin-bottom: 2rem;
+            border: 1px solid #f1f5f9;
+            transition: all 0.3s ease;
+        }
+        .country-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .header-gradient {
+            background: linear-gradient(135deg, #020617 0%, #0f172a 50%, #1e293b 100%);
+        }
+        .flow-card {
+            transition: all 0.3s ease;
+        }
+        .flow-card:hover {
+            transform: translateY(-5px);
+        }
+        .inflow { color: #10b981; }
+        .outflow { color: #f43f5e; }
+        .btn-source {
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-source:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+    <!-- Header -->
+    <header class="header-gradient text-white py-14 px-6 shadow-xl relative overflow-hidden">
+        <!-- Background decorative elements -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+        </div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                <div>
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="px-2.5 py-1 bg-blue-500/20 text-blue-300 text-xs font-bold rounded-md tracking-wider uppercase">Weekly Economic Update</span>
+                        <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    </div>
+                    <h1 class="text-3xl md:text-5xl font-black tracking-tighter italic uppercase">ASEAN <span class="text-blue-400">ECONOMIC</span> UPDATE</h1>
+                    <p class="text-slate-400 mt-2 text-lg">รายงานและประเมินภาวะเศรษฐกิจรายสัปดาห์กลุ่มประเทศอาเซียนและเอเชียเหนือ</p>
+                    
+                    <!-- Updated Embedded File Button Section -->
+                    <div class="mt-6 flex flex-wrap gap-3">
+                        <a href="https://bblasset.sharepoint.com/:b:/r/sites/EconUpdate_Research/Econ%20Research%20Publication/9.%20ASEAN%20Weekly%20Review/20260519%20Weekly%20ASEAN.pdf?csf=1&web=1&e=v54bZq" target="_blank" class="btn-source bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl text-sm font-semibold shadow-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                            ดูไฟล์ต้นฉบับ (20260519 Weekly ASEAN.pdf)
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 p-5 rounded-2xl text-left md:text-right w-full md:w-auto">
+                    <p class="text-xs font-bold text-blue-300 uppercase tracking-widest">ประจำวันที่</p>
+                    <p class="text-2xl font-bold mt-1">18 - 22 พฤษภาคม 2026</p>
+                    <div class="border-t border-white/10 mt-2 pt-2 text-[11px] text-slate-400">
+                        วิเคราะห์ผลกระทบ US-Iran และ Oil Shock
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto py-10 px-6">
+        
+        <!-- SECTION: EXECUTIVE SUMMARY -->
+        <section class="mb-12 bg-white rounded-3xl p-8 border border-slate-100 shadow-sm relative overflow-hidden">
+            <div class="absolute top-0 left-0 bg-blue-600 h-full w-2"></div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                </svg>
+                Executive Summary
+            </h2>
+            <p class="text-slate-600 leading-relaxed mb-6">
+                ตลาดเอเชียเช้าวันนี้ฟื้นตัวแบบระมัดระวัง หลังราคาน้ำมันอ่อนตัวลงจากความหวังด้านการเจรจาทางการทูตระหว่างสหรัฐฯ–อิหร่าน ส่งผลให้ราคาน้ำมันดิบ Brent และ WTI ปรับตัวลงระยะสั้นเพื่อผ่อนลมหายใจให้สินทรัพย์เสี่ยง อย่างไรก็ดี ความเสี่ยงเชิงโครงสร้างหลักยังคงอยู่เนื่องจากวิกฤตความปลอดภัยของช่องแคบฮอร์มุซยังไม่คลี่คลาย
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <div class="font-bold text-slate-900 mb-1.5 flex items-center gap-2">
+                        <span class="h-2 w-2 rounded-full bg-blue-500"></span> 1. Geopolitical Hope
+                    </div>
+                    <p class="text-sm text-slate-600">โดนัลด์ ทรัมป์ ชะลอแผนโจมตีอิหร่านตามคำขอของพันธมิตรอ่าวเปอร์เซีย และเริ่มช่องทางเจรจาทางการทูต</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <div class="font-bold text-slate-900 mb-1.5 flex items-center gap-2">
+                        <span class="h-2 w-2 rounded-full bg-yellow-500"></span> 2. Oil Shock Impact
+                    </div>
+                    <p class="text-sm text-slate-600">ตลาดอาเซียนพึ่งพาพลังงานภายนอกสูง จึงเผชิญแรงกระแทกจากต้นทุนพลังงานที่กระทบดุลการค้าและเงินเฟ้อ</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <div class="font-bold text-slate-900 mb-1.5 flex items-center gap-2">
+                        <span class="h-2 w-2 rounded-full bg-emerald-500"></span> 3. Fund Flow Rotation
+                    </div>
+                    <p class="text-sm text-slate-600">เกิดการไหลเข้าซื้อกองทุนหุ้นจีน (China Tech ETF) หลังประเด็น Trump-Xi Summit ในขณะที่ตลาดเกาหลีถูกขายทำกำไร</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: CURRENCY RESPONSE TO THE CRISIS -->
+        <section class="mb-12 bg-white rounded-3xl p-8 border border-slate-100 shadow-sm relative">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="h-10 w-2 bg-indigo-600 rounded-full"></div>
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-black text-slate-900 tracking-tight uppercase">ASEAN'S CURRENCY RESPONSE TO THE STRAIT OF HORMUZ CRISIS</h2>
+                    <p class="text-slate-500 text-xs mt-0.5">วิเคราะห์ผลกระทบและการเปลี่ยนแปลงความผันผวนของค่าเงินอาเซียน (เทียบ USD) ช่วงก่อนและหลังเกิดวิกฤต</p>
+                </div>
+            </div>
+
+            <!-- Embed Image Element with Better Fallback Alert Box -->
+            <div class="mb-8 border border-slate-200 rounded-2xl overflow-hidden shadow-sm bg-slate-50 p-2">
+                <!-- Using the raw GitHub URL for direct embedding and proper loading -->
+                <img src="https://raw.githubusercontent.com/kidkuiecon-tech/20260519weeklyasean/06c089be95a33c30b677b0c96b2859023a9ffb24/Picture%20fx%20asean.png" onerror="this.style.display='none'; document.getElementById('image-error-notice').style.display='block';" class="w-full h-auto rounded-xl" alt="ASEAN's currency response to the Strait of Hormuz crisis">
+                
+                <div id="image-error-notice" class="hidden p-6 text-center bg-slate-900 text-slate-300 rounded-xl">
+                    <div class="inline-flex p-3 bg-slate-800 rounded-full mb-3 text-amber-400">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-sm font-bold text-white mb-1">ไม่สามารถดึงภาพจาก GitHub ได้ชั่วคราว</h4>
+                    <p class="text-xs max-w-lg mx-auto leading-relaxed">
+                        หากภาพไม่โหลด อาจเกิดจากระบบเครือข่ายภายนอกหรือสิทธิ์การเข้าถึงไฟล์ในคลัง GitHub ส่วนตัวของคุณ <br><strong>อย่างไรก็ดี คุณยังคงอ่านข้อมูลบทวิเคราะห์สรุปค่าเงินเชิงลึกได้จากส่วนข้อมูลด้านล่างนี้ครับ</strong>
+                    </p>
+                </div>
+                <div class="text-[11px] text-slate-500 px-3 py-2 italic text-center border-t border-slate-100 bg-white">
+                    ภาพกราฟเปรียบเทียบความเคลื่อนไหวอัตราแลกเปลี่ยน (ฐานดัชนี Jan 1, 2026 = 100) แหล่งที่มาข้อมูล: Bloomberg / BBLAM
+                </div>
+            </div>
+
+            <!-- Analytical Summary Commentary -->
+            <div class="bg-indigo-50/50 p-5 rounded-2xl border border-indigo-100/80">
+                <h4 class="font-bold text-indigo-950 text-sm mb-2">บทวิเคราะห์การเคลื่อนย้ายและความผันผวนของค่าเงินอาเซียน (EM FX Analysis):</h4>
+                <div class="grid md:grid-cols-2 gap-6 text-xs text-indigo-900/90 leading-relaxed">
+                    <div>
+                        <span class="font-bold text-rose-700 block mb-1">🔴 กลุ่มที่ความผันผวนเร่งขึ้นรุนแรง (Vulnerability Increase):</span>
+                        ค่าเงิน <strong>THB (ไทย), IDR (อินโดนีเซีย), และ PHP (ฟิลิปปินส์)</strong> มีค่าเบี่ยงเบนมาตรฐาน (S.D.) พุ่งสูงขึ้นมากกว่าเท่าตัวหลังเกิดวิกฤต บ่งชี้ว่าตกเป็นเป้าของการเก็งกำไรและมีความอ่อนไหวสูงมากต่อราคาพลังงานที่พุ่งขึ้นในฐานะผู้นำเข้าน้ำมันสุทธิ (Net Oil Importers)
+                    </div>
+                    <div>
+                        <span class="font-bold text-emerald-700 block mb-1">🟢 กลุ่มที่ค่าเงินกลับมานิ่งขึ้น (Stability / Under Management):</span>
+                        ค่าเงิน <strong>SGD (สิงคโปร์), MYR (มาเลเซีย) และ VND (เวียดนาม)</strong> มีระดับความผันผวนลดลงอย่างมีนัยสำคัญ โดยเฉพาะ MYR ซึ่งได้อานิสงส์บางส่วนจากการเป็นผู้ส่งออกพลังงานสุทธิ ขณะที่สิงคโปร์บริหารค่าเงินผ่านตะกร้าและรักษาความแข็งแกร่งได้อย่างยอดเยี่ยม
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: NORTH ASIA FLOW DEEP DIVE -->
+        <section class="mb-12">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="h-10 w-2 bg-slate-900 rounded-full"></div>
+                <h2 class="text-3xl font-black text-slate-900 tracking-tight">NORTH ASIA & CAPITAL FLOWS</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- China & Hong Kong -->
+                <div class="flow-card bg-white p-6 rounded-3xl border-t-4 border-emerald-500 shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-3xl">🇨🇳 🇭🇰</span>
+                        <span class="bg-emerald-50 text-emerald-700 text-xs font-bold px-3 py-1 rounded-full">STRONG INFLOW</span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-1">จีน และ ฮ่องกง</h3>
+                    <div class="text-3xl font-black mb-4 inflow">+$1.22B <span class="text-xs font-normal text-slate-400">Total EM Lead</span></div>
+                    <p class="text-sm text-slate-600 mb-4">
+                        สัปดาห์ล่าสุดมีเม็ดเงินไหลเข้าตลาดจีนสูง นำโดยกองทุน <span class="font-semibold text-slate-800">KraneShares CSI China Internet Fund (+$754M)</span> สูงสุดนับตั้งแต่ ต.ค. 2024 หลังเสร็จสิ้นการประชุม Trump-Xi Summit ช่วยผ่อนคลายเพดานภาษี
+                    </p>
+                    <div class="text-[11px] text-amber-600 bg-amber-50 p-3 rounded-xl border border-amber-100">
+                        ⚠️ <strong>ข้อควรระวัง:</strong> ตัวเลขเศรษฐกิจเดือนเม.ย. อ่อนแอลง โดยการลงทุนภาคเอกชนชะลอตัวและการบริโภคในประเทศยังต้องการมาตรการกระตุ้นจากรัฐ
+                    </div>
+                </div>
+
+                <!-- South Korea -->
+                <div class="flow-card bg-white p-6 rounded-3xl border-t-4 border-rose-500 shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-3xl">🇰🇷</span>
+                        <span class="bg-rose-50 text-rose-700 text-xs font-bold px-3 py-1 rounded-full">PROFIT TAKING</span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-1">เกาหลีใต้</h3>
+                    <div class="text-3xl font-black mb-4 outflow">-$318.5M <span class="text-xs font-normal text-slate-400">ETF Outflows</span></div>
+                    <p class="text-sm text-slate-600 mb-4">
+                        นักลงทุนสถาบันต่างชาติหมุนเงินออกเพื่อทำกำไร หลังตลาดหุ้นปรับขึ้นแรงจากรอบวัฏจักร Memory Chips และกระแสธีมปัญญาประดิษฐ์ (AI) ในสัปดาห์ก่อนหน้า
+                    </p>
+                    <div class="text-[11px] text-rose-600 bg-rose-50 p-3 rounded-xl border border-rose-100">
+                        ⚡ <strong>ความเสี่ยงห่วงโซ่:</strong> ตลาดยังจับตาสถานการณ์การเจรจาที่ไม่คืบหน้าระหว่าง Samsung และสหภาพแรงงาน ซึ่งอาจนำไปสู่การหยุดงานประท้วง
+                    </div>
+                </div>
+
+                <!-- Japan -->
+                <div class="flow-card bg-white p-6 rounded-3xl border-t-4 border-blue-500 shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-3xl">🇯🇵</span>
+                        <span class="bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 rounded-full">RISK ON / MONITOR YIELD</span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-1">ญี่ปุ่น</h3>
+                    <div class="text-3xl font-black mb-4 text-slate-900">ค่าเงินเยนทรงตัว</div>
+                    <p class="text-sm text-slate-600 mb-4">
+                        เศรษฐกิจเติบโตดีกว่าคาดส่งผลให้ธนาคารกลางญี่ปุ่น (BoJ) มีช่องทางในการปรับขึ้นดอกเบี้ยนโยบาย (BoJ Tightening) เพื่อรับมือความเสี่ยงด้านค่าเงิน
+                    </p>
+                    <div class="text-[11px] text-blue-600 bg-blue-50 p-3 rounded-xl border border-blue-100">
+                        📈 <strong>ตลาดพันธบัตร:</strong> เผชิญความกดดันจากการเพิ่มขึ้นของส่วนต่างราคาชดชีเงินเฟ้อ (Inflation risk premium) ทั่วโลก ส่งผลให้อัตราผลตอบแทนพันธบัตรขยับสูงขึ้น
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REGION FOCUS: ASEAN IN A NUTSHELL -->
+        <section class="mb-12 bg-slate-900 text-white rounded-3xl p-8 shadow-xl relative overflow-hidden">
+            <div class="absolute right-0 top-0 opacity-10 pointer-events-none">
+                <svg width="200" height="200" viewBox="0 0 100 100" fill="white">
+                    <circle cx="50" cy="50" r="40" />
+                </svg>
+            </div>
+            <div class="max-w-3xl">
+                <span class="text-blue-400 text-xs font-bold uppercase tracking-wider">Macro Perspective</span>
+                <h3 class="text-2xl font-black mt-2 mb-4">ASEAN IN A NUTSHELL</h3>
+                <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                    กลุ่มประเทศอาเซียนส่วนใหญ่เป็น <span class="text-white font-semibold">ผู้นำเข้าพลังงานสุทธิ (Net Energy Importers)</span> และมีสัดส่วนของอาหารและค่าพลังงานในตะกร้าคำนวณเงินเฟ้อค่อนข้างสูง การปะทุของราคาน้ำมัน (Oil Shock) จึงเป็นภัยคุกคามโดยตรงต่อดุลบัญชีเดินสะพัด กำลังซื้อในครัวเรือน และความจำเป็นในเชิงนโยบายที่จะต้องสกัดเงินเฟ้อแม้จะกระทบกับ GDP Growth ก็ตาม
+                </p>
+                <div class="flex flex-wrap gap-4 text-xs mt-6 text-slate-300">
+                    <div class="flex items-center gap-2 bg-slate-800 px-4 py-2 rounded-xl">
+                        <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+                        <span>Total EM ETF Inflows: +$1.08 Billion</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-slate-800 px-4 py-2 rounded-xl">
+                        <span class="h-2 w-2 rounded-full bg-blue-400"></span>
+                        <span>Asia Pacific Inflow: +$1.29 Billion</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COUNTRY SPECIFIC MACRO & POLICY -->
+        <div class="flex items-center gap-3 mb-6">
+            <div class="h-10 w-2 bg-blue-600 rounded-full"></div>
+            <h2 class="text-3xl font-black text-slate-900 tracking-tight">MACRO & POLICY UPDATES (BY COUNTRY)</h2>
+        </div>
+
+        <!-- 1. THAILAND -->
+        <section class="country-card">
+            <div class="bg-blue-900 h-2 w-full"></div>
+            <div class="p-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                    <div class="flex items-center gap-4">
+                        <span class="text-4xl">🇹🇭</span>
+                        <div>
+                            <h2 class="text-2xl font-bold text-slate-900">ประเทศไทย</h2>
+                            <p class="text-xs text-slate-500">Strong GDP Start, But Slower Path Ahead</p>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 px-4 py-2 rounded-xl border border-blue-100 text-center">
+                        <span class="text-xs text-blue-700 block font-semibold">Q1/2026 Real GDP</span>
+                        <span class="text-xl font-bold text-blue-900">+2.8% YoY</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-12 gap-8 text-sm text-slate-600">
+                    <div class="md:col-span-8 space-y-4">
+                        <p class="leading-relaxed">
+                            เศรษฐกิจไทยเริ่มต้นไตรมาส 1/2026 แข็งแกร่งกว่าที่ตลาดประเมินไว้ โดยขยายตัวได้ที่ <span class="font-bold text-slate-800">2.8% YoY</span> (เดิมตลาดคาด 2.4% และดีขึ้นจาก 2.5% ในไตรมาสก่อนหน้า) หนุนโดยการลงทุนภาครัฐที่เติบโตเด่นชัดถึง <span class="font-bold text-slate-800">9.9% YoY</span> และการใช้จ่ายบริโภคภาครัฐที่เร่งตัวขึ้น 3.4% YoY
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
+                            <div class="bg-slate-50 p-4 rounded-xl">
+                                <span class="font-bold text-slate-900 text-xs block mb-1">ปัญหาเชิงโครงสร้าง:</span>
+                                การใช้จ่ายภาคครัวเรือนชะลอตัวลงเล็กน้อย (3.2% เทียบกับ 3.3%) และดุลการค้าสุทธิอ่อนลงจากการนำเข้าที่เร่งตัวเกินคาด
+                            </div>
+                            <div class="bg-amber-50/50 p-4 rounded-xl border border-amber-100">
+                                <span class="font-bold text-amber-900 text-xs block mb-1">ความเสี่ยงด้านการคลัง:</span>
+                                แผนกู้ฉุกเฉิน 400,000 ล้านบาทเพื่ออุ้มค่าครองชีพและกระตุ้นพลังงานสีเขียว กำลังถูกศาลรัฐธรรมนูญวินิจฉัยความเร่งด่วนทางกฎหมาย
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:col-span-4 bg-slate-900 text-white p-6 rounded-3xl flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-bold text-blue-400 text-xs uppercase tracking-widest mb-3">Bloomberg Forecast</h4>
+                            <div class="text-4xl font-black mb-1">2.0%</div>
+                            <p class="text-[11px] text-slate-400">คาดการณ์อัตราการขยายตัวปี 2026 (ปรับเพิ่มขึ้นจากประมาณการเดิมที่ 1.6% จากตัวเลข Q1 ที่แข็งแรง)</p>
+                        </div>
+                        <div class="mt-6 border-t border-slate-800 pt-4 text-xs">
+                            <span class="text-slate-400 block">เพดานหนี้สาธารณะ:</span>
+                            <span class="font-semibold text-emerald-400">เข้าใกล้เพดาน 70% ของ GDP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. INDONESIA -->
+        <section class="country-card">
+            <div class="bg-red-600 h-2 w-full"></div>
+            <div class="p-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="text-4xl">🇮🇩</span>
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900">อินโดนีเซีย</h2>
+                        <p class="text-xs text-slate-500">เสถียรภาพค่าเงินรูเปียห์และการแทรกแซงตลาดพันธบัตร</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 text-sm text-slate-600">
+                    <div class="space-y-4">
+                        <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                            <h4 class="font-bold text-slate-900 mb-2">อัตราแลกเปลี่ยนเป้าหมาย</h4>
+                            <p class="leading-relaxed">
+                                ธนาคารกลางอินโดนีเซีย (Bank Indonesia: BI) คาดว่าค่าเงินรูเปียห์จะเฉลี่ยอยู่ในกรอบงบประมาณที่ระดับ <span class="font-semibold text-slate-800">16,200–16,800 รูเปียห์ต่อดอลลาร์ฯ</span> (ระดับเป้าหมายเฉลี่ยทั้งปีที่ 16,500) ซึ่งยังเผชิญแรงกดดันตามฤดูกาลในไตรมาส 2 นี้
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-rose-50/50 p-6 rounded-3xl border border-rose-100 text-rose-950">
+                        <h4 class="font-bold uppercase text-xs text-rose-800 tracking-wider mb-3">BI Policy Intervention</h4>
+                        <p class="mb-3">
+                            ธนาคารกลางใช้นโยบายแบบผสมผสานเพื่อลดความผันผวนของส่วนต่างพันธบัตร:
+                        </p>
+                        <ul class="space-y-2 text-xs">
+                            <li class="flex items-start gap-2">
+                                <span class="text-rose-600 font-bold">•</span>
+                                <span><strong>ขายพันธบัตรรัฐบาลระยะสั้น:</strong> เพื่อกระตุ้นให้อัตราดอกเบี้ยระยะสั้นพยุงเม็ดเงินลงทุนต่างชาติ</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-rose-600 font-bold">•</span>
+                                <span><strong>ซื้อพันธบัตรรัฐบาลระยะยาว:</strong> เพื่อรักษาดุลของ Yield Curve และลดความผันผวน</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. MALAYSIA -->
+        <section class="country-card">
+            <div class="bg-yellow-400 h-2 w-full"></div>
+            <div class="p-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="text-4xl">🇲🇾</span>
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900">มาเลเซีย</h2>
+                        <p class="text-xs text-slate-500">แรงกดดันจากทิศทางการเมืองและค่าเงินริงกิต</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-6 text-sm text-slate-600">
+                    <div class="md:col-span-2 space-y-4">
+                        <p class="leading-relaxed">
+                            ค่าเงินริงกิตเผชิญแรงกดดันต่อเนื่องจากการแข็งค่าของเงินดอลลาร์สหรัฐฯ ประกอบกับ <span class="font-semibold text-slate-900">ความไม่แน่นอนทางการเมืองภายในประเทศ</span> หลังนายกรัฐมนตรี อันวาร์ อิบราฮิม ส่งสัญญาณอย่างเป็นนัยว่าอาจมีความเป็นไปได้ในการตัดสินใจยุบสภาและเลือกตั้งก่อนกำหนด
+                        </p>
+                        <div class="bg-amber-50 p-4 rounded-xl border border-amber-100 text-xs text-amber-900">
+                            📢 <strong>วิเคราะห์ความเสี่ยง:</strong> การเคลื่อนไหวดังกล่าวทำให้นักลงทุนต่างชาติเริ่มเพิ่ม Risk Premium สำหรับตลาดพันธบัตรและสินทรัพย์มาเลเซียในระยะสั้น
+                        </div>
+                    </div>
+                    <div class="bg-slate-100 p-5 rounded-2xl flex flex-col justify-center">
+                        <span class="text-slate-400 text-xs uppercase tracking-wider block mb-1">Currency Status</span>
+                        <span class="text-2xl font-extrabold text-slate-900">MYR Vulnerability</span>
+                        <p class="text-xs mt-2 text-slate-500">ค่าเงินมีความเปราะบางต่อราคาน้ำมันโลกและทิศทางอัตราดอกเบี้ยของสหรัฐฯ (Fed)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PHILIPPINES -->
+        <section class="country-card">
+            <div class="bg-rose-600 h-2 w-full"></div>
+            <div class="p-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                    <div class="flex items-center gap-4">
+                        <span class="text-4xl">🇵🇭</span>
+                        <div>
+                            <h2 class="text-2xl font-bold text-slate-900">ฟิลิปปินส์</h2>
+                            <p class="text-xs text-slate-500">เผชิญมรสุมเงินเฟ้อและการใช้นโยบายการเงินแบบตึงตัวสูงสุด</p>
+                        </div>
+                    </div>
+                    <div class="bg-rose-50 px-4 py-2 rounded-xl border border-rose-100 text-center">
+                        <span class="text-xs text-rose-700 block font-semibold">Headline Inflation (Apr)</span>
+                        <span class="text-xl font-bold text-rose-600">7.2% YoY</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-6 text-sm text-slate-600">
+                    <div class="bg-rose-50 p-5 rounded-2xl border border-rose-100 text-center flex flex-col justify-center">
+                        <span class="text-xs text-rose-900 uppercase font-semibold">Q1/2026 GDP Growth</span>
+                        <div class="text-4xl font-black text-rose-600 my-1">2.8%</div>
+                        <p class="text-[10px] text-slate-400 italic">ชะลอตัวลงจาก 3.0% ในไตรมาสก่อนหน้า</p>
+                    </div>
+                    
+                    <div class="md:col-span-2 space-y-4">
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2">
+                                <span class="text-rose-500 font-bold">●</span>
+                                <span><strong>ปัญหาเงินเฟ้อด้านอุปทาน:</strong> นอกจากราคาพลังงานแล้ว ราคาอาหารในประเทศขยับตัวสูงขึ้นรุนแรง โดยราคาข้าวปรับเพิ่มสูงขึ้นถึง <span class="font-bold text-slate-900">+13.7% YoY</span> และข้าวโพดพุ่งขึ้น <span class="font-bold text-slate-900">+21.0% YoY</span></span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-rose-500 font-bold">●</span>
+                                <span><strong>การบริโภคหดตัว:</strong> กำลังซื้อซึ่งเคยเป็นเครื่องยนต์หลักหดตัวลง (การใช้จ่ายภาคครัวเรือนชะลอตัวจาก 3.8% สู่ 3.0%) เนื่องจากดัชนีราคาของแพงและต้นทุนทางการเงินบีบคั้น</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-rose-500 font-bold">●</span>
+                                <span><strong>นโยบายสกัดเงินเฟ้อ:</strong> ธนาคารกลางฟิลิปปินส์ (BSP) พลิกท่าทีมาปรับขึ้นดอกเบี้ย 25 bps ในเดือนเมษายน และมีแนวโน้มปรับขึ้นดอกเบี้ยต่อเนื่องอีกรวม <span class="font-bold text-slate-900">175 bps ในปีนี้</span></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUMMARY CONCLUSION -->
+        <section class="mb-6 bg-slate-100 rounded-3xl p-8 border border-slate-200">
+            <h3 class="text-xl font-bold text-slate-900 mb-3">สรุปมุมมองการลงทุนรายสัปดาห์</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+                การฟื้นตัวของภูมิภาคเอเชียแปซิฟิกในรอบนี้เป็นเพียง <span class="text-slate-950 font-semibold">"การฟื้นตัวเชิงบรรยากาศการลงทุนชั่วคราว"</span> จากความคาดหวังด้านภูมิรัฐศาสตร์ที่อ่อนตัวลง แต่ความตึงเครียดของต้นทุนค่าครองชีพและพลังงานในอาเซียนยังมีทิศทางเปราะบาง นักลงทุนจำต้องเลือกกระจายความเสี่ยงและคัดกรองประเทศที่มีความทนทานต่อหนี้ครัวเรือน มีหนี้สาธารณะต่ำ และมีดุลบัญชีเดินสะพัดที่แข็งแรงเป็นหลัก เพื่อจำกัดความเสี่ยงของการเลือกกระจายพอร์ตในไตรมาสนี้
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="flex justify-center gap-4 mb-6">
+                <span class="px-2.5 py-1 bg-red-600 text-white text-[10px] font-bold rounded tracking-wider">CONFIDENTIAL</span>
+                <span class="px-2.5 py-1 bg-blue-600 text-white text-[10px] font-bold rounded tracking-wider">INTERNAL USE ONLY</span>
+            </div>
+            <p class="text-sm">© 2026 ASEAN Macro Insights & Research. Prepared from: 20260519 Weekly ASEAN.docx</p>
+            <p class="text-[11px] text-slate-500 mt-2">ห้ามทำการคัดลอก เผยแพร่ หรือนำข้อมูลไปใช้นอกเหนือจากวัตถุประสงค์เพื่อการวิเคราะห์การลงทุนเป็นการภายในองค์กรเท่านั้น</p>
+        </div>
+    </footer>
+</body>
+</html>
